@@ -53,6 +53,8 @@ h5 {
   font-weight: 500;
   padding: 0px;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
 .information-links :not(:first-child) {
   padding-left: 50px;
@@ -79,10 +81,25 @@ h5 {
 .icon-envelope {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon-envelope:hover {
+  fill: #2196f3;
 }
 .icon-smartphone {
   width: 10px;
   height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-smartphone:hover {
+  fill: #2196f3;
+}
+.link {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 /* Footer for all pages */
 .footer {
@@ -138,6 +155,51 @@ h5 {
 .footer-list :not(:last-child) {
   padding-bottom: 9px;
 }
+
+.footer-join {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer-icons-list {
+  display: flex;
+  list-style: none;
+}
+.footer-icons-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  justify-content: center;
+}
+.footer-icons-item:hover {
+  background-color: #2196f3;
+}
+.footer-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-icons-link {
+}
+
+.footer-icons {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  margin-top: 11px;
+  justify-content: center;
+}
+.footer-div {
+  display: inline-block;
+}
+.fff {
+  margin-top: 70px;
+  margin-left: 70px;
+}
 /* Index.html */
 .article {
   font-size: 44px;
@@ -154,6 +216,8 @@ h5 {
 .hero-section {
   background: #2f303a;
   padding: 200px 0;
+  background-image: url(../images/main-background.png);
+  background-size: cover;
 }
 .section-features {
   padding-top: 94px;
@@ -242,13 +306,13 @@ h5 {
   justify-content: center;
   margin-bottom: 0;
 }
-.crew li {
+.crew-people {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 94px;
 }
-.crew li:not(:last-child) {
+.crew-people:not(:last-child) {
   margin-right: 30px;
 }
 .crew-names {
@@ -292,59 +356,52 @@ h5 {
   display: flex;
   margin-top: 16px;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 }
 
+.regular-clients {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 .clients-list {
   display: flex;
   list-style: none;
+  margin-bottom: 94px;
+  align-items: center;
 }
 .clients-item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
+.clients-item .clients-icon:hover {
+  fill: currentColor;
+}
 .clients-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.clients-link:hover {
+  color: #2196f3;
 }
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: currentColor;
+  fill: #afb1b8;
+  margin: auto;
+  margin-top: 16px;
 }
 
-.footer-join {
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: white;
-}
-.footer-icons-list {
-  display: flex;
-  list-style: none;
-}
-.footer-icons-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-}
-.footer-icons-link:hover {
-  background-color: #2196f3;
-}
-.footer-icons-link {
-}
-
-.footer-icons {
-  width: 20px;
-  height: 20px;
-  fill: white;
-}
 /* Portfolio */
 .list-section {
   display: flex;
