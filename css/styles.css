@@ -97,6 +97,7 @@ h5 {
   fill: #2196f3;
 }
 .link {
+  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -149,6 +150,7 @@ h5 {
   color: white;
 }
 .footer-list {
+  font-style: normal;
   list-style: none;
   padding: 0;
 }
@@ -183,7 +185,8 @@ h5 {
   margin-right: 10px;
 }
 
-.footer-icons-link {
+.footer-container {
+  display: flex;
 }
 
 .footer-icons {
@@ -193,11 +196,9 @@ h5 {
   margin-top: 11px;
   justify-content: center;
 }
-.footer-div {
-  display: inline-block;
-}
+
 .fff {
-  margin-top: 70px;
+  padding-top: 10px;
   margin-left: 70px;
 }
 /* Index.html */
@@ -214,6 +215,8 @@ h5 {
   text-transform: uppercase;
 }
 .hero-section {
+  max-width: 1600px;
+  margin: 0 auto;
   background: #2f303a;
   padding: 200px 0;
   background-image: url(../images/main-background.png);
@@ -291,9 +294,11 @@ h5 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 .section-crew {
   background: #f5f4fa;
+  padding: 0;
 }
 .wrapper {
   padding: 30px 0;
@@ -375,12 +380,12 @@ h5 {
   align-items: center;
 }
 .clients-item {
-  width: 170px;
+  /* width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -390,16 +395,25 @@ h5 {
 }
 .clients-link {
   display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
+
 .clients-link:hover {
   color: #2196f3;
+  border: 1px solid #2196f3;
+}
+.clients-item:hover .clients-icon {
+  fill: #2196f3;
 }
 .clients-icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-  margin: auto;
-  margin-top: 16px;
 }
 
 /* Portfolio */
@@ -453,6 +467,7 @@ h5 {
   padding: 6px 22px;
   letter-spacing: 0.03em;
   color: #212121;
+  cursor: pointer;
 }
 .list-section li:not(:last-child) {
   margin-right: 8px;
@@ -474,4 +489,9 @@ h5 {
   box-sizing: border-box;
   padding: 0px;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+.list-portfolio li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
